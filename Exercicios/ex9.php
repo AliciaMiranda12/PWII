@@ -6,7 +6,7 @@
     <title>Exercício 09</title>
 </head>
 <body>
-    <fieldset>
+<fieldset>
         <legend>Exercício 09</legend>
     <form action="ex9.php" method="get">
      
@@ -31,6 +31,19 @@
     $numero1 = $_GET['num1'];
     $numero2 = $_GET['num2'];
     $numero3 = $_GET['num3'];
+
+    if($numero1>$numero2 && $numero1>$numero3){
+        echo 'O primeiro é maior';
+    }
+    else if($numero2>$numero1 && $numero2>$numero3){
+        echo 'O segundo é maior';
+    }
+    else{
+        echo 'O terceiro é maior';
+    }
+    }
+
+
      ?>
 </body>
 </html>

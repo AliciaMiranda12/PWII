@@ -21,13 +21,11 @@
     </fieldset>
 
     <?php
-     if (isset($_GET['cadastrar'])) {
+     if (isset($_GET['usuario']) && isset($_GET['senha'])) {
         $usuario = $_GET['usuario'];
         $senha = $_GET['senha'];
-        $usuarioDigitado = $_GET['usuario'];
-        $senhaDigitada = $_GET['senha'];
 
-        if ($senha == $senhaDigitada && $usuario == $usuarioDigitado) {
+        if ($usuario ==='Admin' && $senha === '123') {
             echo 'Cadastrado com sucesso';
          }  
          else {

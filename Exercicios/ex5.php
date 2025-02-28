@@ -23,8 +23,7 @@
         echo 'É vogal';
     }else{
         echo 'É consoante';
-    } 
-    }
+    }}
     ?>
 </body>
 </html>
