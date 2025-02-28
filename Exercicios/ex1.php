@@ -10,10 +10,8 @@
         <legend>Exercício 01</legend>
     <form action="ex1.php" method="get">
         <label for="numero">Digite um número de 0 a 10:</label>
-        <input type="numero" id="numero" name="numero" required>
-
+        <input type="text" id="numero" name="numero" required>
         <br>
-
         <input type="submit" value="Enviar">
     </form>
     </fieldset>

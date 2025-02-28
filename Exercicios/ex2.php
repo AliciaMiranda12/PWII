@@ -10,7 +10,7 @@
         <legend>Exercício 02</legend>
     <form action="ex2.php" method="get">
         <label for="idade">Digite sua idade:</label>
-        <input type="idade" name="idade">
+        <input type="text" name="idade">
 
     </form>
     </fieldset>
