@@ -1,0 +1,25 @@
+.bg-grayscale-30{
+    background: #dedede;
+}
+
+.bg-grayscale-30 h3,
+.bg-grayscale-30 p
+{
+    color: rgb(77, 55, 55);
+
+}
+
+.bg-grayscale-30 h3{
+    font-size: 48px;
+}
+
+.bg-grayscale-30 p{
+    font-size: 18px;
+}
+
+.bg-grayscale-50{
+    background: #bfbdbd;
+}
+
+
+
