@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<button onClick="dizerOla()">Diga Olá</button>
+
+
+<button onClick="aplicarEstilo()">Aplicar Estilo</button>
+
+<button onclick="AumentarFonte()">Aumentar Fonte</button>
+
+<button onclick="DiminuirFonte()">Diminuir Fonte</button>
+
+<button onclick="AddcorPurple()">Aplicar cor Purple</button>
+
+<button onclick="AddcorRed()">Aplicar cor Red</button>
+
+<button onclick="AddcorBlue()">Aplicar cor blue</button>
+
+<button onclick="AumentarMargens()">Aumentar margens</button>
+
+<button onclick="DiminuirMargens()">Reduzir Margens</button>
+
+<h1>Etec Salles Gomes</h1>
+
+
+<script>
+
+let font_size = 12;
+let titulo = document.querySelector('h1')
+let mar_gin = 13;
+
+
+//diminui a fonte
+function AumentarFonte(){
+  font_size++;
+   aplicarSize();
+}
+
+//cores
+
+//Cor ROXA
+function AddcorPurple(){
+    titulo.style.backgroundColor= 'purple';
+}
+
+//Cor Vermelha
+function AddcorRed(){
+    titulo.style.backgroundColor= 'red';
+}
+
+//Cor Azul
+function AddcorBlue(){
+    titulo.style.backgroundColor= 'Blue';
+}
+
+
+//fontes
+
+function AumentarFonte(){
+//font_size++;
+font_size = font_size + 10;
+}
+
+//aumenta a fonte
+function DiminuirFonte(){
+ font_size--;
+ aplicarSize();
+}
+
+
+
+
+//funcao que estiliza o efeito
+function aplicarSize(){
+    //jeito noob loser
+    //titulo.style.fontSize = font_size + 'px'; 
+   
+    //jeito pro god hacker
+    titulo.style.fontSize = `${font_size}px`;
+}
+
+
+
+
+
+//fucao Margin
+function AumentarMargens(){
+AumentarMargens = mar_gin + 10;
+aplicarMargin();
+}
+
+
+function DiminuirMargens(){
+
+    DiminuirMargens = mar_gin - 10;
+    aplicarMargin();
+}
+
+function aplicarMargin (){
+    titulo.style.margin = mar_gin + 'px'; 
+}
+
+
+//função para falar olá 
+function dizerOla(){
+    alert('Olá!!!');
+}
+
+
+
+
+
+
+//função que aplica estilo fazendo funcao
+function aplicarEstilo(){
+    let titulo  = document.querySelector('h1');
+titulo.style.backgroundColor = 'red';
+titulo.style.fontSize = '64px';
+titulo.style.fontFamily = 'Comic Sans MS';
+titulo.style.marginTop = '108px';
+
+
+}
+
+</script>
+
+</body>
+</html>
