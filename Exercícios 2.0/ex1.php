@@ -31,7 +31,7 @@ $alunos = [
 foreach ($alunos as $aluno) {
     echo 'Nome: ' . $aluno['nome'] . '<br>';
     echo 'RM: ' . $aluno['RM'] . '<br>';
-    echo '<img src="' . $aluno['foto'] . '" alt="Foto de ' . $aluno['nome'] . '" style="width:100px;"><br>';
+    echo '<img src="' . $aluno['foto'] . '" alt="Foto de ' . $aluno['nome'] . '" style="width:200px;"><br>';
     echo 'Telefone: ' . $aluno['telefone'] . '<br><br>';
 }
 
