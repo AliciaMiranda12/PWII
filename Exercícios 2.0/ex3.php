@@ -19,10 +19,10 @@
  foreach ($etec as $instituicao => $cursos) {
     echo "$instituicao: ";
     foreach ($cursos as $curso => $detalhes) {
-        echo "$curso: ";
+        echo '<ul> <ol>' .$curso.'</ol></ul> ';
         foreach ((array)$detalhes as $chave => $valor) {
             foreach ((array)$valor as $modulo) {
-                echo "$modulo ";
+                echo '<ul> <li>' .$modulo.'</li></ul> ' ;
             }
         }
     }
