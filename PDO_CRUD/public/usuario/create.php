@@ -16,10 +16,9 @@
     $password = isset($_POST['password']) ? $_POST['password'] : exit();
 
     //statement-declaração
-    $stmt = $pdo->prepare('INSERT INTO usuario (id, username, password) VALUES(:id, :username, :password)');
-    $stmt->bindParam(':id',0);
+    $stmt = $pdo->prepare('INSERT INTO usuario (username, password) VALUES(:username, :password)');
     $stmt->bindParam(':username',$username); //limpeza p ver se não é malicioso
-    $stmt->bindParam(':password',$passsword);
+    $stmt->bindParam(':password',$password);
     $stmt->execute();
 
 
